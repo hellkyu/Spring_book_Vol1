@@ -3,5 +3,12 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_144/lib/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/com.springsource.net.sf.cglib-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.asm-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.beans-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.context-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.core-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.expression-3.0.7.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
