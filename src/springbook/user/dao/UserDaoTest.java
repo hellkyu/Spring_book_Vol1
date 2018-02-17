@@ -38,9 +38,11 @@ public class UserDaoTest {
 		this.user2 = new User("leegw700", "이길원", "springno2");
 		this.user3 = new User("bumjin", "박범진", "springno3");
 		
-		DataSource dataSource = new SingleConnectionDataSource(
-				"jdbc:mysql://localhost/testdb", "spring", "book", true);
-		dao.setDataSource(dataSource);
+//		dao = new UserDao();
+//		DataSource dataSource = new SingleConnectionDataSource(
+//				"jdbc:mysql://localhost/testdb", "spring", "book", true);
+//		dao.setDataSource(dataSource);
+//		dao.setJdbcContext(jdbcContext);
 	}
 	
 	@Test
