@@ -5,9 +5,12 @@ import static springbook.user.service.UserService.MIN_RECCOMEND_FOR_GOLD;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.fail;
 
 import java.util.Arrays;
 import java.util.List;
+
+import javax.sql.DataSource;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -26,6 +29,7 @@ import springbook.user.domain.User;
 public class UserServiceTest {
 	@Autowired UserService userService;
 	@Autowired UserDao userDao;
+	@Autowired DataSource dataSource;
 	List<User> users;
 	
 	@Before
@@ -40,20 +44,20 @@ public class UserServiceTest {
 	}
 	
 	@Test
-	public void upgradeLevels() {
+	public void upgradeLevels() throws Exception {
 		userDao.deleteAll();
 		for(User user : users) userDao.add(user);
 		
 		userService.upgradeLevels();
 		
-		checkLevel(users.get(0), false);
-		checkLevel(users.get(1), true);
-		checkLevel(users.get(2), false);
-		checkLevel(users.get(3), true);
-		checkLevel(users.get(4), false);
+		checkLevelUpgraded(users.get(0), false);
+		checkLevelUpgraded(users.get(1), true);
+		checkLevelUpgraded(users.get(2), false);
+		checkLevelUpgraded(users.get(3), true);
+		checkLevelUpgraded(users.get(4), false);
 	}
 	
-	private void checkLevel(User user, boolean upgraded) {
+	private void checkLevelUpgraded(User user, boolean upgraded) {
 		User userUpdate = userDao.get(user.getId());
 		if(upgraded) {
 			assertThat(userUpdate.getLevel(), is(user.getLevel().nextLevel()));
@@ -79,5 +83,37 @@ public class UserServiceTest {
 		
 		assertThat(userWithLevelRead.getLevel(), is(userWithLevel.getLevel()));
 		assertThat(userWithoutLevelRead.getLevel(), is(Level.BASIC));
+	}
+	
+	static class TestUserService extends UserService{
+		private String id;
+		
+		private TestUserService(String id) {
+			this.id = id;
+		}
+		
+		protected void upgradeLevel(User user) {
+			if(user.getId().equals(this.id)) throw new TestUserServiceException();
+			super.upgradeLevel(user);
+		}
+	}
+	
+	static class TestUserServiceException extends RuntimeException{}
+	
+	@Test
+	public void upgradeAllOrNothing() throws Exception{
+		UserService testUserService = new TestUserService(users.get(3).getId());
+		testUserService.setUserDao(this.userDao);
+		testUserService.setDataSource(this.dataSource);
+		userDao.deleteAll();
+		for(User user : users) userDao.add(user);
+		
+		try {
+			testUserService.upgradeLevels();
+			fail("TestUserServiceException expected");
+		} catch(TestUserServiceException e) {
+		}
+		
+		checkLevelUpgraded(users.get(1), false);
 	}
 }
