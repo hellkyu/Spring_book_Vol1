@@ -46,6 +46,16 @@ public class User {
 	public void setLevel(Level level) {
 		this.level = level;
 	}
+	
+	public void upgradeLevel() {
+		Level nextLevel = this.level.nextLevel();
+		if(nextLevel == null) {
+			throw new IllegalStateException(this.level + "은 업그레이드가 불가능합니다");
+		}
+		else {
+			this.level = nextLevel;
+		}
+	}
 
 	public int getLogin() {
 		return login;
