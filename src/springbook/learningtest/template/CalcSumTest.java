@@ -7,10 +7,19 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 public class CalcSumTest {
-	@Test
-	public void sumOfNumbers() throws IOException{
-		Calculator calculator = new Calculator();
-		int sum = calculator.calcSum("./src/springbook/learningtest/template/numbers.txt");
-		assertThat(sum, is(10));
+	Calculator calculator;
+	String numFilepath;
+	
+	@Before public void setUp() {
+		this.calculator = new Calculator();
+		this.numFilepath = "./src/springbook/learningtest/template/numbers.txt";
+	}
+	
+	@Test public void sumOfNumbers() throws IOException{
+		assertThat(calculator.calcSum(numFilepath), is(10));
+	}
+	
+	@Test public void multiplyOfNumbers() throws IOException{
+		assertThat(calculator.calcMultiply(this.numFilepath), is(24));
 	}
 }
