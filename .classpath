@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.test-3.0.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.aop-3.0.7.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/Vol1-30/Lib/lib/org.springframework.transaction-3.0.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/유영규/Desktop/java-study/toby/javax.mail-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
