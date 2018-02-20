@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67b90f82-b860-4872-a6c1-41f55c09c577" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$MockMailSender.class" afterPath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$MockMailSender.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$MockUserDao.class" afterPath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$MockUserDao.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$TestUserService.class" afterPath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$TestUserService.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$TestUserServiceException.class" afterPath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest$TestUserServiceException.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest.class" afterPath="$PROJECT_DIR$/out/production/Spring_book_ch01/springbook/user/service/UserServiceTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Spring_book_ch01/test-applicationContext.xml" afterPath="$PROJECT_DIR$/out/production/Spring_book_ch01/test-applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" afterPath="$PROJECT_DIR$/src/springbook/user/service/UserServiceTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test-applicationContext.xml" afterPath="$PROJECT_DIR$/src/test-applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloTest.java" afterPath="$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,8 +92,8 @@
       <file leaf-file-name="HelloTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="361">
+              <caret line="21" column="107" lean-forward="false" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloUppercase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloUppercase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloUppercase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="342">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#141#142#0" expanded="true" />
                 <element signature="e#175#176#0" expanded="true" />
@@ -124,6 +115,19 @@
                 <element signature="e#397#398#0" expanded="true" />
                 <element signature="e#457#458#0" expanded="true" />
                 <element signature="e#517#518#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UppercaseHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/springbook/learningtest/jdk/UppercaseHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+              <folding>
+                <element signature="e#237#238#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,16 +148,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="645">
               <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailSender.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../toby/Vol1-30/Lib/lib/org.springframework.context.support-3.0.7.RELEASE.jar!/org/springframework/mail/MailSender.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -185,8 +179,9 @@
         <option value="$PROJECT_DIR$/src/springbook/learningtest/jdk/ReflectionTest.java" />
         <option value="$PROJECT_DIR$/src/springbook/learningtest/jdk/Hello.java" />
         <option value="$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloTarget.java" />
-        <option value="$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloTest.java" />
         <option value="$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloUppercase.java" />
+        <option value="$PROJECT_DIR$/src/springbook/learningtest/jdk/UppercaseHandler.java" />
+        <option value="$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloTest.java" />
       </list>
     </option>
   </component>
@@ -576,7 +571,7 @@
       <option name="presentableId" value="Default" />
       <updated>1519144761092</updated>
       <workItem from="1519144763701" duration="812000" />
-      <workItem from="1519145591464" duration="6848000" />
+      <workItem from="1519145591464" duration="7559000" />
     </task>
     <servers />
   </component>
@@ -591,6 +586,9 @@
       <configuration name="HelloTest.simpleProxy" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HelloTest_simpleProxy - 2018.02.21 at 04h 15m 33s.xml">
+      <configuration name="HelloTest.simpleProxy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HelloTest_simpleProxy - 2018.02.21 at 04h 40m 32s.xml">
       <configuration name="HelloTest.simpleProxy" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ReflectionTest - 2018.02.21 at 04h 03m 07s.xml">
@@ -608,12 +606,9 @@
     <history-entry file="ReflectionTest_invokeMethod - 2018.02.21 at 04h 05m 01s.xml">
       <configuration name="ReflectionTest.invokeMethod" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_mockUpgradeLevels - 2018.02.21 at 03h 26m 05s.xml">
-      <configuration name="UserServiceTest.mockUpgradeLevels" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7660000" />
+    <option name="totallyTimeSpent" value="8371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -841,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        <state relative-caret-position="361">
+          <caret line="21" column="107" lean-forward="false" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -851,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/springbook/learningtest/jdk/HelloUppercase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="342">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#141#142#0" expanded="true" />
             <element signature="e#175#176#0" expanded="true" />
@@ -862,6 +857,17 @@
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#457#458#0" expanded="true" />
             <element signature="e#517#518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/springbook/learningtest/jdk/UppercaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
           </folding>
         </state>
       </provider>
