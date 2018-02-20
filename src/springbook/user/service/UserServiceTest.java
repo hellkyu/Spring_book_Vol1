@@ -54,20 +54,25 @@ public class UserServiceTest {
 	@Test
 	@DirtiesContext
 	public void upgradeLevels() throws Exception {
+		//DB 테스트 데이터 준비
 		userDao.deleteAll();
 		for(User user : users) userDao.add(user);
 		
+		//메일 발송 여부 확인을 위해 목 오브젝트 DI
 		MockMailSender mockMailSender = new MockMailSender();
 		userServiceImpl.setMailSender(mockMailSender);
 		
+		//테스트 대상 실행
 		userService.upgradeLevels();
 		
+		//DB에 저장된 결과 확인
 		checkLevelUpgraded(users.get(0), false);
 		checkLevelUpgraded(users.get(1), true);
 		checkLevelUpgraded(users.get(2), false);
 		checkLevelUpgraded(users.get(3), true);
 		checkLevelUpgraded(users.get(4), false);
 		
+		//목 오브젝트를 이용한 결과 확인
 		List<String> request = mockMailSender.getRequests();
 		assertThat(request.size(), is(2));
 		assertThat(request.get(0), is(users.get(1).getEmail()));
@@ -152,5 +157,31 @@ public class UserServiceTest {
 		
 		public void send(SimpleMailMessage[] mailMessage) throws MailException{
 		}
+	}
+	
+	static class MockUserDao implements UserDao{
+		private List<User> users;
+		private List<User> updated = new ArrayList<User>();
+		
+		private MockUserDao(List<User> users) {
+			this.users = users;
+		}
+		
+		public List<User> getUpdated(){
+			return this.updated;
+		}
+		
+		public List<User> getAll(){
+			return this.users;
+		}
+		
+		public void update(User user) {
+			updated.add(user);
+		}
+		
+		public void add(User user) {throw new UnsupportedOperationException();}
+		public void deleteAll() {throw new UnsupportedOperationException();}
+		public User get(String id) {throw new UnsupportedOperationException();}
+		public int getCount() {throw new UnsupportedOperationException();}
 	}
 }
