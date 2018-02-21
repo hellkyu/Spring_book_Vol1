@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 public class UppercaseHandler implements InvocationHandler {
     private Object target;
 
-    public UppercaseHandler(Object target){
+    UppercaseHandler(Object target){
         this.target = target;
     }
 
